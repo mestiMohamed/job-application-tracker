@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
+  // 1. On change le nom de la variable ici pour correspondre à shadcn
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+  variable: "--font-mono", // Optionnel : utile si vous utilisez des blocs de code
   subsets: ["latin"],
 });
 
@@ -18,16 +20,20 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
-    </html>
+      <html
+          lang="en"
+          className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      >
+      {/* 2. On ajoute font-sans, bg-background et text-foreground */}
+      <body className="min-h-full flex flex-col font-sans bg-background text-foreground">
+      <Navbar />
+      {children}
+      </body>
+      </html>
   );
 }
