@@ -31,10 +31,16 @@ export default function SignUp() {
 
         try {
 
-            const result = await signUp.email({
-                name,
-                email,
+            console.log("Payload envoyé :", {
+                name: name.trim(),
+                email: email.trim(),
                 password
+            });
+
+            const result = await signUp.email({
+                name: name.trim(),
+                email: email.trim(),
+                password: password
             });
 
             if (result.error) {
@@ -77,19 +83,19 @@ export default function SignUp() {
                             <Label htmlFor={"name"} className={"text-gray-700"}>Name</Label>
                             <Input id={"name"} type={"text"} placeholder={"Mohamed Mesti"} required
                                    className="border-gray-300 focus:border-primary focus:ring-primary"
-                                   onChange={(e) => setName(e.target.value)}/>
+                                   onChange={(e) => setName(e.target.value)} value={name}/>
                         </div>
                         <div className={"space-y-2"}>
                             <Label htmlFor={"email"} className={"text-gray-700"}>Email</Label>
                             <Input id={"email"} type={"email"} placeholder={"mohamedmesti@example.com"} required
                                    className="border-gray-300 focus:border-primary focus:ring-primary"
-                                   onChange={(e) => setEmail(e.target.value)}/>
+                                   onChange={(e) => setEmail(e.target.value)} value={email}/>
                         </div>
                         <div className={"space-y-2"}>
                             <Label htmlFor={"password"} className={"text-gray-700"}>Password</Label>
                             <Input id={"password"} minLength={8} type={"password"} required
                                    className="border-gray-300 focus:border-primary focus:ring-primary"
-                                   onChange={(e) => setPassword(e.target.value)}/>
+                                   onChange={(e) => setPassword(e.target.value)} value={password}/>
                         </div>
                     </CardContent>
                     <CardFooter className={"flex flex-col space-y-4"}>
