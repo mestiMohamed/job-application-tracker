@@ -7,9 +7,9 @@
     <list default="true" id="2bf0556b-43bf-4baf-acd5-62c56435cb26" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/sign-out-btn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/sign-out-btn.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/auth/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/auth/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/db.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/db.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proxy.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +102,7 @@
       <updated>1785604488369</updated>
       <workItem from="1785604489398" duration="19279000" />
       <workItem from="1785866051777" duration="8999000" />
-      <workItem from="1786132774228" duration="740000" />
+      <workItem from="1786132774228" duration="6133000" />
     </task>
     <servers />
   </component>
