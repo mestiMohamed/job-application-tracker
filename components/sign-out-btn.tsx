@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import {signOut} from "@/lib/auth/auth-client";
 import {DropdownMenuItem} from "@/components/ui/dropdown-menu";
+import { LogOut } from "lucide-react";
 
 export default function SignOutBtn() {
 
@@ -14,6 +15,6 @@ export default function SignOutBtn() {
                 router.push("/sign-in");
             }
 
-        }}>Log Out</DropdownMenuItem>
+        }}><LogOut /> Log Out</DropdownMenuItem>
     );
 }
